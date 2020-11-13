@@ -33,7 +33,7 @@ void loop() {
   Valores[1]=Datos[1];
   Valores[0]=Datos[0];
 
-  //esto solo acomoda los valores de menor a mayor
+ 
   for(int j=0;j<len;j++)
   {
     for(int i=0;i<ln;i++)
@@ -46,7 +46,10 @@ void loop() {
       }
     }
   }
-  T=Valores[3];
-  Serial.println(T);
+  a=Valores[3];
+  t=a*(5.0/1023);
+  T=t/0.01;
+  Serial.print(T);
+  Serial.println("C");
       
 }
